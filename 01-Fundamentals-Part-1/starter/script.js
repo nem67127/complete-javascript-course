@@ -52,3 +52,21 @@ console.log(typeof population);
 
 //**--- ASSIGMENT: let, const, var
 language = "English";
+
+// Basic Operators
+// transform values or combine values
+// concatination + strings together
+// mathematic operators: +, -, /, *, **
+// assignment operators: 
+let x = 10 + 5; // 15
+x += 10; // x = x + 10 : 25
+x *= 4; // x = x * 4 : 100
+x ++; // x = x + 1: 101
+x --; // x = x - 1: 100
+
+//comparison operators:
+// used to create boolean values > , < , <= , >=
+x > 100; // false
+console.log(x > 100);
+
+
