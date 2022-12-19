@@ -84,7 +84,7 @@ const isBiggerThanFinland = population > populationFinland;
 console.log(isBiggerThanFinland);
 
 //create a description variable with the string provided
-const description = "Portugal is in Europe, and its 11 million people speak portuguese";
+// const description = "Portugal is in Europe, and its 11 million people speak portuguese";
 
 // //Operator Precedence
 // //different operators are executed before other, most math operators are executed before comparison operators 
@@ -121,3 +121,38 @@ const description = "Portugal is in Europe, and its 11 million people speak port
 
 // markHigherBMI = markBMI > johnBMI;
 // console.log(markHigherBMI);
+
+//Strings and Template Literals
+// template literals: `${enter JS}`, easier than concatination of strings/values, also allows multiple line strings 
+//**-- ASSIGNMENT: Strings and Template Literals
+//recreate description with template literal
+const description = `${country} is in ${continent}, and its ${population} people speak ${language}`;
+console.log(description);
+
+//Taking decisions: if / else statements
+// if / else statemnts are control structure, it controls blocks of code.
+//**-- Assignment: if / else statements
+
+if (population > 33000000){
+    console.log(`${country}'s population is above the average`)
+} else{
+    console.log(`${country}'s population is ${33000000-population} below the average`)
+}
+
+// //--------- CODING CHALLENGE #2 --------
+// // imporve challenge number 1
+// const markWeight = 78; 
+// const markHeight = 1.69; 
+// const johnWeight = 92;
+// const johnHeight = 1.95;
+
+// //BMI = mass / height ** 2;
+// const markBMI = markWeight / markHeight ** 2;
+// const johnBMI = johnWeight / johnHeight ** 2;
+
+// if(markBMI > johnBMI){
+//     console.log(`Mark's BMI (${markBMI}) is higher than John's (${johnBMI})!`);
+// } else{
+// console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI})!`);
+// }
+
