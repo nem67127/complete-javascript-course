@@ -18,7 +18,7 @@ let job2= "Teacher";
 
 const country = "Canada";
 const continent = "North America";
-let population = "38.25 million";
+let population = 38250000;
 
 console.log( `country: ${country}, continent: ${continent}, population: ${population}` );
 
@@ -53,20 +53,71 @@ console.log(typeof population);
 //**--- ASSIGMENT: let, const, var
 language = "English";
 
-// Basic Operators
-// transform values or combine values
-// concatination + strings together
-// mathematic operators: +, -, /, *, **
-// assignment operators: 
-let x = 10 + 5; // 15
-x += 10; // x = x + 10 : 25
-x *= 4; // x = x * 4 : 100
-x ++; // x = x + 1: 101
-x --; // x = x - 1: 100
+// // Basic Operators
+// // transform values or combine values
+// // concatination + strings together
+// // mathematic operators: +, -, /, *, **
+// // assignment operators: 
+// let x = 10 + 5; // 15
+// x += 10; // x = x + 10 : 25
+// x *= 4; // x = x * 4 : 100
+// x ++; // x = x + 1: 101
+// x --; // x = x - 1: 100
 
-//comparison operators:
-// used to create boolean values > , < , <= , >=
-x > 100; // false
-console.log(x > 100);
+// //comparison operators:
+// // used to create boolean values > , < , <= , >=
+// x > 100; // false
+// console.log(x > 100);
 
+//**-- ASSIGNMENT: Basic Operators
+// half of the population of your country
+const halfPopulation = population / 2;
+console.log(halfPopulation);
 
+//population plus 1
+population ++;
+console.log(population);
+
+//Is your country's population bigger than Findland's
+const populationFinland = 6000000;
+const isBiggerThanFinland = population > populationFinland;
+console.log(isBiggerThanFinland);
+
+//create a description variable with the string provided
+const description = "Portugal is in Europe, and its 11 million people speak portuguese";
+
+// //Operator Precedence
+// //different operators are executed before other, most math operators are executed before comparison operators 
+// //assignment is one of the last to be executed and done right - left 
+// // () are executed first like PEDMAS
+// let x, y;
+// x = y = 25 - 10 - 5;
+// console.log(x, y); // 10, 10
+
+// //--------- CODING CHALLENGE #1 --------
+// //Calculate BMI with two different data sets, weight in kg, height in m
+
+// //DATA set 1
+// let markWeight = 78; 
+// let markHeight = 1.69; 
+// let johnWeight = 92;
+// let johnHeight = 1.95;
+
+// //BMI = mass / height ** 2;
+// let markBMI = markWeight / markHeight ** 2;
+// let johnBMI = johnWeight / johnHeight ** 2;
+
+// let markHigherBMI = markBMI > johnBMI;
+// console.log(markHigherBMI);
+
+// //DATA set 2
+// markWeight = 95;
+// markHeight =  1.88;
+// johnWeight =  85;
+// johnHeight = 1.76;
+
+// markBMI = markWeight / markHeight ** 2;
+// johnBMI = johnWeight / johnHeight ** 2;
+
+// markHigherBMI = markBMI > johnBMI;
+// console.log(markHigherBMI);
