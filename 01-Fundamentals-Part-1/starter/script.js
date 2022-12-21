@@ -156,3 +156,93 @@ if (population > 33000000){
 // console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI})!`);
 // }
 
+// //Type Conversion and Coercion 
+// //Type conversion is when we manually convert from one type to another , string -> number -> boolean
+// const inputYear = "1995";
+// console.log(Number(inputYear), inputYear);
+// console.log(Number(inputYear)+18);
+// console.log(String(23));
+// //NaN - not a number / invalid number
+// console.log(Number("Tash"));
+// console.log(typeof NaN);
+// //Type Coercion is when JS automatically converts types behind the scenes for us
+// console.log("I am " + 23 + " years old"); // changes the number to a string 
+// console.log("23" - "10" - 3); // -, *, / converts strings to numbers whereas + converts numbers to strings;
+
+// //**-- Assignment: Type Conversion and Coercion
+// /* 
+// Guess the outcome
+// '9' - '5'; 4
+// '19' - '13' + '17'; "617"
+// '19' - '13' + 17; 23
+// '123' < 57; NaN
+// 5 + 6 + '4' + 9 - 4 - 2; 1143
+// */
+// console.log("9"-"5");
+// console.log('19' - '13' + '17');
+// console.log('19' - '13' + 17);
+// console.log('123' < 57); // false - treats it like a number and will return boolean value
+// console.log(5 + 6 + '4' + 9 - 4 - 2)
+
+//Truthy and Falsy values
+// 5 falsy values - 0, "", undefined, null, NaN become false when converted to a boolean 
+// everything else will be truthy 
+// console.log(Boolean(0)); //false
+// console.log(Boolean(undefined)); //false
+// console.log(Boolean("hello")); //true
+// console.log(Boolean({})); //true
+
+// don't usually use Boolean() in practice
+
+//Equality Operators: == vs ===
+//strict exquality operator === no type coersion "18" === 18 false
+//loose equality operator == , type coersion "18" == 18 is true
+// strict !==, does not equal
+// loose !=, does not equal
+
+//**-- Assignment: Equality Operators
+// const numNeighbours = Number(prompt('How many neighbour countries does your countryhave?'));
+
+// if(numNeighbours === 1){
+//     console.log('Only 1 border!');
+// }else if( numNeighbours > 1){
+//     console.log('More than 1 border');
+// }else{
+//     console.log('No borders');
+// }
+
+//Boolean Logic / Logical Operators
+// combining true and false / combining logical operations
+// AND: && when all variables are true
+// OR: || when at least one varaiable is true
+// NOT: ! inverts true/false
+
+//--------- CODING CHALLENGE #3 --------
+
+//calculate average scores for each team
+//DATA 1
+// const dolphinAverage = (96 + 108 + 89)/3;
+// const koalaAverage = (88 + 91 + 110)/3;
+
+//Bonus Data 1
+// const dolphinAverage = (97 + 112 + 101)/3;
+// const koalaAverage = (109 + 95 + 123)/3;
+
+//Bonus Data 2
+const dolphinAverage = (97 + 112 + 101)/3;
+const koalaAverage = (109 + 95 + 106)/3;
+
+// see who wins, there can be a tie
+// Include a requirement for a minimum score of 100
+const minimumscore = 100;
+
+if (dolphinAverage === koalaAverage && (dolphinAverage >=minimumscore && koalaAverage >=minimumscore)){
+    console.log(`There is a tie. Dolphins ${dolphinAverage} and Koalas ${koalaAverage}.`);
+} else if(dolphinAverage > koalaAverage && dolphinAverage >= minimumscore){
+    console.log(`Dolphins win with ${dolphinAverage} over Koalas ${koalaAverage}.`);
+} else if (koalaAverage > dolphinAverage && koalaAverage >= minimumscore){
+    console.log(`Koala's win with ${koalaAverage} over Dolphins ${dolphinAverage}.`)
+} else{
+    console.log(`Nobody got the minimum score of ${minimumscore}`)
+}
+
